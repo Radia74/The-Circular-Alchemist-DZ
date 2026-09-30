@@ -30,16 +30,14 @@
 - [Live Stats](#-live-stats--إحصائيات-حية)
 - [The Circular Quintet](#️-the-circular-chemistry-quintet--الخماسي-الكيميائي)
 - [ML Performance](#-ml-performance--أداء-الذكاء-الاصطناعي)
-- [Na-ion Battery System](#-na-ion-battery-innovation--ابتكار-البطاريات)
+- [Na-ion Battery Innovation](#-na-ion-battery-innovation--ابتكار-البطاريات)
 - [Green Ammonia Export](#-green-ammonia-export--تصدير-الأمونيا-الخضراء)
 - [AI Agent v2.0](#-ai-agent-v20--المساعد-الذكي)
-- [System Architecture](#-system-architecture--هيكل-النظام)
+- [System Flow](#-system-flow--مسار-النظام)
 - [Supported Regions](#-supported-regions--المناطق-المدعومة)
-- [Quick Start](#-quick-start)
+- [IP & Access Status](#-ip--access-status--الملكية-الفكرية-وحالة-الوصول)
 - [SWOT Analysis](#-swot-analysis--التحليل-الاستراتيجي)
-- [Partners](#-partners--الشركاء)
-
----
+- [Partners & Collaboration](#-partners--الشركاء)
 
 ## 🧪 Overview / نظرة عامة
 
@@ -186,23 +184,23 @@ Source: Sahara salt lakes → free local raw material 🧂
 
 ## 🏗️ System Architecture / هيكل النظام
 
-```
-circular-alchemist-dz/
-├── 🏠 Home.py                    # Main dashboard (Streamlit) — AR/DE/EN
-├── pages/
-│   ├── 🔬 Digital_Lab.py         # Live simulation — El Oued parameters
-│   ├── 🏭 Production_Sim.py      # Production simulation + NH₃ export
-│   └── 📊 Strategic_Analysis.py  # SWOT + Roadmap + AI forecasting
-├── core/
-│   ├── main_dz.py                # System nucleus + Feedback Loop engine
-│   ├── ml_engine.py              # Random Forest + 6-algorithm benchmark
-│   ├── battery_manager.py        # Na-ion vs Li-ion thermal model
-│   └── ammonia_gateway.py        # Green NH₃ pricing + export logic
-├── data/
-│   ├── el_oued_climate.csv       # Historical climate data — Wadi Souf
-│   └── battery_profiles.json     # Na-ion thermal efficiency curves
-└── requirements.txt
-```
+```mermaid
+graph TD
+    %% User Layer
+    A[🖥️ Interactive Streamlit Dashboard] --> B[⚙️ Core Simulation Engine]
+
+    %% Intelligence Layer
+    subgraph Intelligence & Processing Core
+        B --> C[🤖 ML Engine: Random Forest Benchmark]
+        B --> D[🔋 Na-ion Thermal Battery Manager]
+        B --> E[🌿 Green Ammonia Export Gateway]
+    end
+
+    %% Autonomous Control
+    C & D & E --> F[🔮 AI Agent v2.0 Decision Loop]
+
+    %% Real-time Outputs
+    F --> G[📊 Live Performance Metrics & Export Analytics]
 
 ---
 
@@ -219,27 +217,16 @@ circular-alchemist-dz/
 
 ---
 
-## 🚀 Quick Start
+## 🔒 IP & Access Status / حالة الوصول والملكية الفكرية
 
-```bash
-# Clone
-git clone https://github.com/Ao_Anker-Intelligence-Lab/circular-alchemist-dz
-cd circular-alchemist-dz
+> ⚠️ **Restricted Repository Notice:** This repository contains proprietary machine learning algorithms, chemical simulation engines, and trade logistics code developed under **Ao_Anker Intelligence Lab**.
 
-# Install
-pip install -r requirements.txt
+### Deployment & Evaluation
+- **Source Code Status:** Private & Proprietary (Access restricted).
+- **Live Demo & Pilot Access:** Available for institutional partners, research investors, and government stakeholders upon request under Non-Disclosure Agreements (NDA).
+- **Environment Stack:** Built on Python 3.10+, Streamlit Enterprise, Scikit-learn, and XGBoost core backends.
 
-# Run
-streamlit run Home.py --server.port 8505
-# → Open http://localhost:8505
-```
-
-**Requirements:**
-- Python 3.10+
-- Streamlit ≥ 1.28
-- scikit-learn · XGBoost · pandas · numpy
-
----
+> 📩 **Request Access:** To request a private pilot demonstration or institutional integration, please contact **Ao_Anker Intelligence Lab** via [LinkedIn](https://linkedin.com) or open an inquiry in the [Issues Section](https://github.com/Ao_Anker-Intelligence-Lab/circular-alchemist-dz/issues).
 
 ## 📊 SWOT Analysis / التحليل الاستراتيجي
 
